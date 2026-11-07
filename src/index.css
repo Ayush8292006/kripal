@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    font-family: 'DM Sans', 'Poppins', sans-serif;
+    color: #1E1E1E;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDF6F7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8B4BC;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B98A95;
+}
+
+/* Shimmer Sweep Animation */
+.shimmer-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-sweep::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: all 0.75s ease;
+}
+
+.shimmer-sweep:hover::after {
+  left: 150%;
+}
+
+/* Silver Sparkle Badge */
+.silver-925-badge {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E6E6E6 40%, #BFC3C9 70%, #F5F5F5 100%);
+  box-shadow: 0 1px 4px rgba(191, 195, 201, 0.4);
+}
+
+/* Glassmorphism Header */
+.glass-header {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Swiper custom styles */
+.swiper-pagination-bullet {
+  background: #B98A95 !important;
+  opacity: 0.35 !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #E8B4BC !important;
+  opacity: 1 !important;
+  width: 20px !important;
+  border-radius: 6px !important;
+}
+
+/* Safe Area Insets for Mobile App Experience */
+.safe-pb {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+

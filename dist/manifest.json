@@ -1,0 +1,21 @@
+{
+  "short_name": "Kripal Jewellers",
+  "name": "Kripal Jewellers - Pure 925 Silver",
+  "icons": [
+    {
+      "src": "https://kripalsilver.com/assets/images/ks%20logo.jpg.jpeg",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://kripalsilver.com/assets/images/ks%20logo.jpg.jpeg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "theme_color": "#E8B4BC",
+  "display": "standalone",
+  "orientation": "portrait"
+}
